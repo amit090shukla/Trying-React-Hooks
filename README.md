@@ -2,6 +2,8 @@ This is a basic Todo App using:
 
 ### `React Hooks`
 
+![Todo App](https://i.ibb.co/LkWhtcH/Capture.png "Todo App")
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
