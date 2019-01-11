@@ -1,5 +1,15 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
+const Input = styled.input`
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 30px #e4e4e4;
+  margin: 30px 0;
+  font-size: 1.2em;
+`;
 const useInputValue = initialValue => {
   const [value, setValue] = useState(initialValue);
   return {
@@ -18,7 +28,7 @@ export default ({ onSubmit }) => {
         resetValue();
       }}
     >
-      <input {...text} />
+      <Input {...text} placeholder="Add new item" />
     </form>
   );
 };
