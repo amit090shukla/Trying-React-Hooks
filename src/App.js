@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import styled from "styled-components";
+import Completed from "./Completed";
+import Pending from "./Pending";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -40,6 +42,11 @@ const App = () => {
       <Form
         onSubmit={text => setTodos([{ text, complete: false }, ...todos])}
       />
+      <div style={{ display: "flex" }}>
+        <Completed todos={todos} />
+        <Pending todos={todos} />
+      </div>
+      <hr />
       <div>
         {todos.map((val, key) => (
           <div
